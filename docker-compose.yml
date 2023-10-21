@@ -1,0 +1,18 @@
+﻿version: '3.8'
+
+services:
+#  secretmanagerbot:
+#    image: secretmanagerbot
+#    build:
+#      context: .
+#      dockerfile: SecretManagerBot/Dockerfile
+    database:
+        image: mongo:6-jammy
+        ports:
+            - '27017:27017'
+        volumes:
+            - dbdata:/data/db
+
+volumes:
+    dbdata:
+
