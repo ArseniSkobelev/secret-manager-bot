@@ -2,5 +2,6 @@
 
 public class SecurityConfiguration
 {
-    public string SymmetricKey { get; set; } = String.Empty;
+    public string SymmetricKey { get; set; }
+    public List<string> AllowedUsers { get; set; }
 }

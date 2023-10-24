@@ -3,5 +3,5 @@
 public static class DatabaseCollections
 {
     public static string Users { get; } = "users";
-    public static string Passwords { get; } = "passwords";
+    public static string Secrets { get; } = "secrets";
 }
